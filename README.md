@@ -21,7 +21,6 @@ OBSWEB, öğrencilerin eğitim süreçlerini daha etkili bir şekilde yönetmele
 
 ### 2. Not Sistemi
 - Öğrenciler, ders notlarını görüntüleyebilir.
-
 ![Ekran görüntüsü 2023-12-06 191845](https://github.com/selcukmuhammed/OBS_Web/assets/147719772/2a73955e-0353-4242-962a-4a054f8fe6bf)
 
 - Öğretmenler, öğrenci notlarını yönetebilirler.
