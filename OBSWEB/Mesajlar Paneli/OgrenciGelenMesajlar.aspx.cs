@@ -11,7 +11,9 @@ namespace OBSWEB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            DataSetTableAdapters.Tbl_MesajlarTableAdapter dt = new DataSetTableAdapters.Tbl_MesajlarTableAdapter();
+            Repeater1.DataSource = dt.OgrenciGelenKutusu1(Session["OgrNumara"].ToString());
+            Repeater1.DataBind();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Ogrenci.Master" AutoEventWireup="true" CodeBehind="OgrenciGelenMesajlar.aspx.cs" Inherits="OBSWEB.OgrenciGelenMesajlar" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Ogretmen.Master" AutoEventWireup="true" CodeBehind="GidenMesajlar.aspx.cs" Inherits="OBSWEB.GidenMesajlar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -6,11 +6,10 @@
     <table class="table table-bordered table-hover">
             <tr>
                 <th scope="col">ID</th>
-                <th scope="col">ALICI</th>
+                <th scope="col">GÖNDEREN</th>
                 <th scope="col">BAŞLIK</th>
                 <th scope="col">İÇERİK</th>
                 <th scope="col">TARİH</th>
-                <th scope="col">İŞLEMLER</th>
 
             </tr>
         <tbody>
@@ -21,7 +20,7 @@
                     <tr>
 
                         <td><%#Eval("MesajId")%></td>
-                        <td><%#Eval("Alici")%></td>
+                        <td><%#Eval("Gonderen")%></td>
                         <td><%#Eval("Baslik")%></td>
                         <td><%#Eval("Icerik")%></td>
                         <td><%#Eval("Tarih")%></td>

@@ -48,7 +48,7 @@
             <h4 class="auto-style3">Öğrenci Bilgilendirme Sistemi</h4>
 
             <div style="margin: auto; text-align: center;">
-            <asp:Image ID="Image1" runat="server" Height="100px" Width="200px" ImageUrl="~/whatsapp-image-2022-09-27-at-105551-1664266143.jpeg" />
+            <asp:Image ID="Image1" runat="server" Height="125px" Width="200px" ImageUrl="logo_Beyaz.png" />
             </div>
             <br /> 
 
@@ -68,7 +68,7 @@
             <br />
             <br />
 
-            <asp:Button ID="Button2" runat="server" Text="İptal Et" CssClass="btn btn-danger" Width="300px"/>
+            <asp:Button ID="Button2" runat="server" Text="Öğretmen Giriş" CssClass="btn btn-danger" Width="300px" OnClick="Button2_Click"/>
             <asp:Button ID="Button3" runat="server" Text="Şifremi Unuttum" CssClass="btn btn-default" Width="300px"/>
 
         </div>

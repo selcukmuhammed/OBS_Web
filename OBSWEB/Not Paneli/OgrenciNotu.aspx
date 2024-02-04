@@ -32,7 +32,7 @@
                         <td><%#Eval("Durum")%></td>
                         <td>
 
-                            <asp:HyperLink ID="HyperLink2" NavigateUrl='<%#"~/NotGuncelle.aspx?NotId="+Eval("NotId") %>' runat="server" CssClass="btn btn-success">GÜNCELLE</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink2" NavigateUrl='<%#"~/NotGuncelle.aspx?NotId="+Eval("NotId") %>' runat="server" CssClass="btn btn-success">GÖRÜNTÜLE</asp:HyperLink>
 
                         </td>
 

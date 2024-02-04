@@ -36,5 +36,25 @@ namespace OBSWEB
             }
             baglanti.Close();
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("SELECT * FROM Tbl_Ogretmen WHERE OgrtNumara = @p1 and OgrtSifre = @p2", baglanti);
+            komut.Parameters.AddWithValue("@p1", TxtKullaniciAdi.Text);
+            komut.Parameters.AddWithValue("@p2", TxtKullaniciSifre.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+
+            if (dr.Read())
+            {
+                Session.Add("OgrtNumara", TxtKullaniciAdi.Text);
+                Response.Redirect("Default.aspx");
+            }
+            else
+            {
+                TxtKullaniciSifre.Text = "Hatalı Şifre";
+            }
+            baglanti.Close();
+        }
     }
 }
